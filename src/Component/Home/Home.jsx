@@ -8,7 +8,7 @@ import bg3 from "../../assets/images/bg/Sajek.png";
 const Home = () => {
   return (
     <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       
       <div className="relative z-10 container mx-auto px-6 py-12">
         <nav className="flex justify-between items-center text-white">
@@ -33,16 +33,22 @@ const Home = () => {
           </div>
           
           <div className="flex space-x-6">
-            <div className="card w-64 shadow-xl border-2 border-yellow-500 ">
-              <figure><img className="h-72 w-full object-cover" src={bg3} alt="Sajek" /></figure>
+            <div className="card w-64 shadow-xl  ">
+            <figure className="border-4 rounded-2xl border-white">
+    <img
+      className="h-72 w-full object-cover"
+      src={bg3}
+      alt="Sajek"
+    />
+  </figure>
               <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold">SAJEK</div>
             </div>
-            <div className="card w-64 shadow-xl   border-2 border-yellow-500">
-              <figure><img className="h-72 w-full object-cover" src={bg2} alt="Sreemangal" /></figure>
+            <div className="card w-64 shadow-xl  ">
+              <figure  className="border-4 rounded-2xl border-white"><img className="h-72 w-full object-cover" src={bg2} alt="Sreemangal" /></figure>
               <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold">SREEMANGAL</div>
             </div>
-            <div className="card w-64 shadow-xl  border-2 border-yellow-500">
-              <figure><img className="h-72 w-full object-cover" src={bg1} alt="Sundarbans" /></figure>
+            <div className="card w-64 shadow-xl  ">
+              <figure  className="border-4 rounded-2xl border-white"><img className="h-72 w-full object-cover" src={bg1} alt="Sundarbans" /></figure>
               <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold">SUNDARBANS</div>
             </div>
           </div>
